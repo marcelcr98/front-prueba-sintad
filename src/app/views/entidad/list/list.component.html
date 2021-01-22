@@ -1,0 +1,48 @@
+<div class="container">
+        <div class="card">
+            <div class="card-header">
+    
+                Documentos
+    
+            </div>
+            <div class="card-body" class="table table-hover">
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ID Documento</th>
+                            <th>N° Documento</th>
+                            <th>Razon social</th>
+                            <th>Nombre comercial</th>
+                            <th>ID Contribuyente</th>
+                            <th>Direccion</th>
+                            <th>Telefono</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center"  *ngFor="let entidad of entidades ">
+                           
+                            <td>{{entidad.idEntidad}}</td>
+                            <td>{{entidad.documento}}</td>
+                            <td>{{entidad.nroDocumento}}</td>
+                            <td>{{entidad.razonSocial}}</td>
+                            <td>{{entidad.nombreComercial}}</td>
+                            <td>{{entidad.contribuyente}}</td>
+                            <td>{{entidad.direccion}}</td>
+                            <td>{{entidad.telefono}}</td>
+                            <td>{{entidad.estado}}</td>
+                           
+                            <td>
+                                <button class="btn btn-info">Editar</button>
+                                <button class="btn btn-danger" style="margin-left:10px;">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+    
+            </div>
+        </div>
+    </div>

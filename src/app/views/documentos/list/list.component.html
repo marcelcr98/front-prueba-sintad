@@ -1,0 +1,38 @@
+<div class="container">
+        <div class="card">
+            <div class="card-header">
+    
+                Documentos
+    
+            </div>
+            <div class="card-body" class="table table-hover">
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  *ngFor="let documento of documentos "class="text-center">
+                            <td>{{documento.idTipoDocumento}}</td>
+                            <td>{{documento.codigo}}</td>
+                            <td>{{documento.nombre}}</td>
+                            <td>{{documento.descripcion}}</td>
+                            <td>{{documento.estado}}</td>
+                            <td>
+                                <button class="btn btn-info">Editar</button>
+                                <button class="btn btn-danger" style="margin-left:10px;">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+    
+            </div>
+        </div>
+    </div>

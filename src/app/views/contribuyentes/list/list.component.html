@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+
+            Contribuyentes
+
+        </div>
+        <div class="card-body">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let contribuyente of contribuyentes "class="text-center">
+                        <td>{{contribuyente.idTipoContribuyente}}</td>
+                        <td>{{contribuyente.nombre}}</td>
+                        <td>{{contribuyente.estado}}</td>
+                        <td>
+                            <button class="btn btn-info">Editar</button>
+                            <button class="btn btn-danger" style="margin-left:10px;">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
